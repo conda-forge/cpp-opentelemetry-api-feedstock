@@ -1,5 +1,5 @@
 {% set name = "cpp-opentelemetry-api" %}
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/open-telemetry/opentelemetry-cpp/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3d640201594b07f08dade9cd1017bd0b59674daca26223b560b9bb6bf56264c2
+  sha256: 20fa97e507d067e9e2ab0c1accfc334f5a4b10d01312e55455dc3733748585f4
 
 build:
   number: 0
