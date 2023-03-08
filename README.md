@@ -1,11 +1,11 @@
-About cpp-opentelemetry-api
-===========================
+About cpp-opentelemetry-api-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cpp-opentelemetry-api-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/open-telemetry/opentelemetry-cpp
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cpp-opentelemetry-api-feedstock/blob/main/LICENSE.txt)
 
 Summary: The OpenTelemetry C++ Client
 
