@@ -1,8 +1,7 @@
-{% set name = "cpp-opentelemetry-api" %}
 {% set version = "1.9.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: cpp-opentelemetry-api
   version: {{ version }}
 
 source:
