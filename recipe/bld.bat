@@ -18,3 +18,6 @@ cmake .. ^
 
 cmake --build . --config Release --target install
 if errorlevel 1 exit 1
+
+:: ensure we don't clobber CMake files from cpp-opentelemetry-sdk
+rmdir /s /q %LIBRARY_LIB%\cmake\opentelemetry-cpp

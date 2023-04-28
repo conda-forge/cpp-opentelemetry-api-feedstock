@@ -18,3 +18,6 @@ cmake ${CMAKE_ARGS} ..  \
 
 ninja install
 popd
+
+# ensure we don't clobber CMake files from cpp-opentelemetry-sdk
+rm -rf $PREFIX/lib/cmake/opentelemetry-cpp

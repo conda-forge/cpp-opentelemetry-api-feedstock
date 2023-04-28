@@ -9,7 +9,7 @@ source:
   sha256: 0fdbefbdc2c154634728097e26de52a8210ed95cb032beb5f35da0a493cd5066
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -19,8 +19,13 @@ requirements:
 
 test:
   commands:
-    - test -d $PREFIX/include/opentelemetry/  # [unix]
-    - if not exist %LIBRARY_INC%\opentelemetry exit 1  # [win]
+    # headers
+    - test -d $PREFIX/include/opentelemetry                  # [unix]
+    - if not exist %LIBRARY_INC%\opentelemetry exit 1        # [win]
+
+    # absence of CMake metadata (reserved for cpp-opentelemetry-sdk)
+    - test ! -d $PREFIX/lib/cmake/opentelemetry-cpp          # [unix]
+    - if exist %LIBRARY_LIB%\cmake\opentelemetry-cpp exit 1  # [win]
 
 about:
   home: https://github.com/open-telemetry/opentelemetry-cpp
